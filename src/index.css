@@ -1,10 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap");
 
 .cursive {
-  font-family:"Neucha", cursive;
+  font-family: "Zen Antique Soft", serif;
   font-weight: 700;
 }
 
@@ -15,5 +16,5 @@
 }
 
 .home-name {
-  font-size: 150px;
+  font-size: 100px;
 }

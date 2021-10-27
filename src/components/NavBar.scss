@@ -1,0 +1,55 @@
+@import "../variables.scss";
+@import "../typography.scss";
+
+html {
+  font-family: "Lato";
+  font-weight: 200;
+}
+
+.container {
+  background-color: $black;
+}
+
+.navbar {
+  padding: 20px;
+
+  &__nav {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    &__link {
+      color: $lightblue;
+      text-decoration: none;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+
+      &:hover {
+        text-decoration: underline;
+        filter: brightness(110);
+        text-shadow: rgba(131, 227, 230, 0.9) 0px 0px 17px;
+      }
+    }
+    &__home {
+      color: whitesmoke;
+      font-size: 2rem;
+      padding: 1rem 2rem;
+      &:hover {
+        text-shadow: rgba(131, 227, 230, 0.9) 0px 0px 17px;
+        filter: brightness(110);
+      }
+    }
+  }
+}
+
+.active {
+  // text-shadow: rgba(131, 227, 230, 0.9) 0px 0px 21px;
+  // filter: brightness(120);
+  padding: 1rem 2rem;
+  background-color: darkblue;
+
+  &:hover {
+    text-decoration: underline;
+    // filter: brightness(110);
+    text-shadow: rgba(131, 227, 230, 0.9) 0px 0px 17px;
+  }
+}
