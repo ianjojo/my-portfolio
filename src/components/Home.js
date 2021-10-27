@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../nasa-Yj1M5riCKk4-unsplash.jpeg";
 
 export default function Home() {
   return (
