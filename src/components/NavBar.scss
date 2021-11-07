@@ -14,7 +14,7 @@ html {
   justify-content: space-between;
   align-items: center;
   border-top: 0.5px solid $white;
-  border-bottom: 2px solid $white;
+  border-bottom: 0.5px solid $white;
 }
 
 .navbar {
@@ -22,6 +22,19 @@ html {
   align-items: center;
   &__link {
     font-family: "ClashDisplay-Medium";
+    font-weight: 500;
+    color: $white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    padding-right: 2rem;
+    margin: 0;
+    display: inline-flex;
+    text-align: left;
+  }
+
+  &__home {
+    font-family: "ClashDisplay-Semibold";
     font-weight: 500;
     color: $white;
     text-decoration: none;
@@ -40,15 +53,6 @@ html {
     color: $green;
     // filter: brightness(110);
     // text-shadow: rgba(131, 227, 230, 0.9) 0px 0px 17px;
-  }
-  &__home {
-    color: $white;
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    &:hover {
-      text-shadow: rgba(131, 227, 230, 0.9) 0px 0px 17px;
-      filter: brightness(110);
-    }
   }
 }
 

@@ -17,7 +17,7 @@ export default function NavBar() {
             to="/"
             exact
             activeClassName="navbar__active--home"
-            className="navbar__link"
+            className="navbar__home"
           >
             Ian Johnston
           </NavLink>

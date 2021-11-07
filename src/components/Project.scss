@@ -11,6 +11,7 @@ a {
   &__container {
     margin: 0 2rem;
     display: flex;
+    align-items: space-evenly;
   }
   &__title {
     color: whitesmoke;
@@ -24,7 +25,7 @@ a {
   &__desc {
     &--container {
       height: 100px;
-      width: 180px;
+      width: 15rem;
     }
   }
   &__tagbox {
@@ -47,8 +48,8 @@ a {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 10rem;
-  width: 10rem;
+  height: 15rem;
+  width: 15rem;
 }
 .fill .project__img {
   object-fit: cover;

@@ -1,6 +1,9 @@
+@import "../variables.scss";
+@import "../typography.scss";
+
 body {
   font-family: "ClashDisplay-Bold";
-  background-color: #222;
+  background-color: $black;
   color: whitesmoke;
   font-family: "ClashDisplay-Regular";
 }
