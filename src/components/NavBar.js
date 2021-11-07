@@ -1,46 +1,56 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import "./NavBar.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faLinkedin,
+  faGithub,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function NavBar() {
   return (
     <header className="bg-gray-500">
-      <div className="container mx-auto flex justify-between">
-        <nav className="flex">
+      <div className="navbar__container">
+        <nav className="navbar">
           <NavLink
             to="/"
             exact
-            activeClassName="text-white"
-            className="inline-flex items-center py-6 px-3 mr-4 text-gray-100 hover:text-purple-200 text-4xl font-bold cursive tracking-widest"
+            activeClassName="navbar__active"
+            className="navbar__link"
           >
             ianjojo
           </NavLink>
 
           <NavLink
             to="/post"
-            activeClassName="text-gray-800 bg-purple-200"
-            className="inline-flex items-center py-3 px-3 my-6 mx-3 rounded text-gray-200 nm-concave-gray-500 hover:nm-convex-gray-500"
+            activeClassName="navbar__active"
+            className="navbar__link"
             // className="inline-flex items-center py-3 px-3 my-6 rounded text-gray-200 hover:text-purple-200"
           >
             blog
           </NavLink>
           <NavLink
             to="/project"
-            activeClassName="text-gray-800 bg-purple-200"
-            className="inline-flex items-center py-3 px-3 my-6 mx-3 rounded text-gray-200 nm-concave-gray-500 hover:nm-convex-gray-500"
+            activeClassName="navbar__active"
+            className="navbar__link"
           >
             projects
           </NavLink>
           <NavLink
             to="/about"
-            activeClassName="text-gray-800 bg-purple-200"
-            className="inline-flex items-center py-3 px-3 my-6 mx-3 rounded text-gray-200 nm-concave-gray-500 hover:nm-convex-gray-500"
+            activeClassName="navbar__active"
+            className="navbar__link"
           >
             about me
           </NavLink>
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
-          <SocialIcon
+          <FontAwesomeIcon className="icon" icon={faTwitter} />
+          <FontAwesomeIcon className="icon" icon={faGithub} />
+          <FontAwesomeIcon className="icon" icon={faLinkedin} />
+          {/* <SocialIcon
             url="https://twitter.com/shakysnakes"
             className="mr-4"
             target="_blank"
@@ -60,7 +70,7 @@ export default function NavBar() {
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
-          />
+          /> */}
         </div>
       </div>
     </header>

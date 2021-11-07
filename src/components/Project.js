@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 //
 import sanityClient from "../client.js";
+import "./Project.scss";
 
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
@@ -11,10 +12,15 @@ export default function Project() {
         `*[_type == "project"]{
         title,
         date,
-        place,
         language,
         description,
-        projectType,
+        projectImage{
+          asset->{
+            _id,
+            url
+          },
+          alt
+        },
         link,
         tags
       }`
@@ -25,17 +31,12 @@ export default function Project() {
 
   return (
     <main className="bg-gray-300 min-h-screen p-12">
-      <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive">projects.</h1>
-        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          i made these things.
-        </h2>
-
-        <section className="grid grid-cols-2 gap-8">
+      <section className="">
+        <section className="project__container">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-16">
-                <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-7001">
+              <article className="project">
+                <h3 className="project__title">
                   <a
                     href={project.link}
                     alt={project.title}
@@ -45,26 +46,25 @@ export default function Project() {
                     {project.title}
                   </a>
                 </h3>
-                <div className="text-gray-500 text-xs space-x-4">
-                  <span>
-                    <strong className="font-bold">Finished on</strong>:{" "}
-                    {new Date(project.date).toLocaleDateString()}
-                  </span>
+                <div className="project__desc--container">
+                  <p className="project__desc">{project.description}</p>
                 </div>
-                <p className="my-6 text-lg text-gray-700 leading-relaxed">
-                  {project.description}
-                </p>
+
                 <a
                   href={project.link}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="text-red-500 font-bold hover:underline hover:text-red-400"
                 >
-                  View The Project{" "}
-                  <span role="img" aria-label="right pointer">
-                    👉
-                  </span>
+                  <div className="fill">
+                    <img
+                      className="project__img"
+                      src={project.projectImage.asset.url}
+                      alt=""
+                    />
+                  </div>
                 </a>
+                <h3>{project.tags}</h3>
               </article>
             ))}
         </section>

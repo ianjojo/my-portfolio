@@ -1,4 +1,5 @@
 import React from "react";
+import "./Home.scss";
 
 export default function Home() {
   return (
@@ -8,10 +9,24 @@ export default function Home() {
         alt="astronaut floating in space"
         className="absolute object-cover w-full h-full"
       /> */}
-      <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-        <h1 className="text-3xl text-gray-400 font-bold cursive leading-none lg:leading-snug home-name ">
-          Sveiki, Ianjojo is here.
-        </h1>
+      <section className="welcome">
+        <div className="welcome__left">
+          <h1 className="welcome__text">Sveiki, Ianjojo is here.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+            dolorem velit aliquid minus eos officiis quibusdam enim fugiat ex
+            blanditiis omnis deserunt fuga quaerat assumenda atque veritatis!
+            Aliquam magnam sed atque voluptate dolorem fugiat molestias.
+            Veritatis, aut ipsa, maiores inventore cumque, quidem eos molestiae
+            voluptatum maxime architecto beatae ex explicabo.
+          </p>
+        </div>
+
+        <img
+          className="welcome__img"
+          src="https://media.giphy.com/media/3o85xyj0M45c9MkXhS/giphy.gif"
+          alt=""
+        />
       </section>
     </main>
   );

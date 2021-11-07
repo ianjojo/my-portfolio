@@ -16,21 +16,18 @@ export default {
       name: "description",
       type: "text",
     },
-    {
-      name: "projectType",
-      title: "Project Type",
-      type: "string",
-      options: {
-        list: [
-          { value: "music", title: "Music" },
-          { value: "school", title: "School" },
-          { value: "client", title: "Client" },
-        ],
-      },
-    },
+
     {
       name: "link",
       type: "url",
+    },
+    {
+      name: "projectImage",
+      title: "Project image",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
     },
     {
       name: "tags",
@@ -45,4 +42,11 @@ export default {
       },
     },
   ],
+  preview: {
+    select: {
+      title: "title",
+      description: "description",
+      media: "projectImage",
+    },
+  },
 };

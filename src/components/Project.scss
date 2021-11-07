@@ -1,0 +1,41 @@
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.project {
+  width: 25%;
+  &__container {
+    margin: 0 2rem;
+    display: flex;
+  }
+  &__title {
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    font-family: "ClashDisplay-SemiBold";
+  }
+
+  &__img {
+  }
+
+  &__desc {
+    &--container {
+      height: 100px;
+      width: 180px;
+    }
+  }
+}
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 10rem;
+  width: 10rem;
+}
+.fill .project__img {
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%;
+}
