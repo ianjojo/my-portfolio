@@ -64,7 +64,9 @@ export default function Project() {
                     />
                   </div>
                 </a>
-                <h3>{project.tags}</h3>
+                <div className="project__tagbox">
+                  <h5 className="project__tag">{project.tags}</h5>
+                </div>
               </article>
             ))}
         </section>

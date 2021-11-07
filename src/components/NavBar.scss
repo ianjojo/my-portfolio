@@ -21,7 +21,8 @@ html {
   display: flex;
   align-items: center;
   &__link {
-    font-family: "ClashDisplay-Regular";
+    font-family: "ClashDisplay-Medium";
+    font-weight: 500;
     color: $white;
     text-decoration: none;
     font-size: 2rem;

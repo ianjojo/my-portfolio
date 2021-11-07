@@ -1,3 +1,6 @@
+@import "../variables.scss";
+@import "../typography.scss";
+
 a {
   color: whitesmoke;
   text-decoration: none;
@@ -23,6 +26,19 @@ a {
       height: 100px;
       width: 180px;
     }
+  }
+  &__tagbox {
+    margin-top: 8px;
+    border-bottom: 1px solid white;
+    padding-bottom: 32px;
+  }
+  &__tag {
+    color: $green;
+    border: 1px solid $white;
+    display: inline;
+    border-radius: 8px;
+
+    padding: 3px 4px;
   }
 }
 

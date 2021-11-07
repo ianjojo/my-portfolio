@@ -17,10 +17,10 @@ export default function NavBar() {
           <NavLink
             to="/"
             exact
-            activeClassName="navbar__active"
+            activeClassName="navbar__active--home"
             className="navbar__link"
           >
-            ianjojo
+            Ian Johnston
           </NavLink>
 
           <NavLink
@@ -29,21 +29,21 @@ export default function NavBar() {
             className="navbar__link"
             // className="inline-flex items-center py-3 px-3 my-6 rounded text-gray-200 hover:text-purple-200"
           >
-            blog
+            Blog
           </NavLink>
           <NavLink
             to="/project"
             activeClassName="navbar__active"
             className="navbar__link"
           >
-            projects
+            Projects
           </NavLink>
           <NavLink
             to="/about"
             activeClassName="navbar__active"
             className="navbar__link"
           >
-            about me
+            About me
           </NavLink>
         </nav>
         <div className="inline-flex py-3 px-3 my-6">
