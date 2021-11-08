@@ -49,7 +49,7 @@ const Ul = styled.ul`
     font-weight: 500;
     color: $white;
     text-decoration: none;
-    font-size: 29px;
+    font-size: 26px;
     padding: 0.5rem 0;
     padding-right: 2rem;
     margin: 0;
@@ -60,7 +60,7 @@ const Ul = styled.ul`
     text-decoration: underline;
     text-underline-offset: 10px;
     text-decoration-thickness: 1px;
-    color: $green;
+    color: rgb(42, 241, 233);
     // filter: brightness(110);
     // text-shadow: rgba(131, 227, 230, 0.9) 0px 0px 17px;
   }

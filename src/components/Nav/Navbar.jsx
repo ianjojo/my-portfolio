@@ -17,7 +17,7 @@ const Nav = styled.nav`
     font-weight: 700;
     color: $white;
     text-decoration: none;
-    font-size: 34px;
+    font-size: 32px;
     padding: 0.5rem 0;
     padding-right: 2rem;
     margin: 0;
