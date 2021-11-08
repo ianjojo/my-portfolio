@@ -15,7 +15,6 @@ h1 {
 }
 
 .welcome {
-  margin: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,6 +29,19 @@ h1 {
   }
 
   &__left {
-    width: 50%;
+    width: 90%;
   }
+}
+
+.sig {
+  height: 200px;
+  width: auto;
+  text-align: right;
+}
+
+.sigbox {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 64px;
+  align-items: center;
 }

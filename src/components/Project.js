@@ -31,12 +31,12 @@ export default function Project() {
 
   return (
     <main className="container2">
-      <h2 className="hello">
+      {/* <h2 className="hello">
         Hello, ianjojo here. Web dev, earl grey tea enthusiast, musician,
         prolific tinkerer. Looking for the intersections of all things. My
         skills include toasting hazelnuts to perfection, front-end and buncha
         stacks. My wife and my cat think I’m the most awesome.
-      </h2>
+      </h2> */}
       {/* <section className=""> */}
       <section className="project__container">
         {projectData &&

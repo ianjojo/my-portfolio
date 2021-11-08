@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 // import RightNav from "./RightNav";
 import { NavLink } from "react-router-dom";
+
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
@@ -38,6 +39,7 @@ const StyledBurger = styled.div`
 const Ul = styled.ul`
   list-style: none;
   display: flex;
+
   flex-flow: row nowrap;
   li {
     padding: 18px 10px;
@@ -62,6 +64,7 @@ const Ul = styled.ul`
     // filter: brightness(110);
     // text-shadow: rgba(131, 227, 230, 0.9) 0px 0px 17px;
   }
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background: rgba(
@@ -77,7 +80,7 @@ const Ul = styled.ul`
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
-    height: 30vh;
+    height: 40vh;
     width: 200px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
@@ -97,6 +100,7 @@ const Burger = () => {
         <div />
         <div />
       </StyledBurger>
+
       <Ul open={open}>
         <li>
           <NavLink
@@ -126,7 +130,7 @@ const Burger = () => {
             className="navbar__link"
             onClick={() => setOpen(!open)}
           >
-            About me
+            About
           </NavLink>
         </li>
       </Ul>
