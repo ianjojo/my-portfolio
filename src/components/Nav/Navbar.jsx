@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
-import { NavLink } from "react-router-dom";
 const Nav = styled.nav`
   height: 55px;
   margin: 0;
