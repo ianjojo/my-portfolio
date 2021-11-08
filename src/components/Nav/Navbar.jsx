@@ -14,11 +14,11 @@ const Nav = styled.nav`
   //   justify-content: space-between;
   .navbar__home {
     padding: 15px 0;
-    font-family: "ClashDisplay-Semibold";
-    font-weight: 500;
+    font-family: "ClashDisplay-SemiBold";
+    font-weight: 700;
     color: $white;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 40px;
     padding: 0.5rem 0;
     padding-right: 2rem;
     margin: 0;

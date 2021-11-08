@@ -43,11 +43,11 @@ const Ul = styled.ul`
     padding: 18px 10px;
   }
   .navbar__link {
-    font-family: "ClashDisplay-Medium";
+    font-family: "ClashDisplay-Regular";
     font-weight: 500;
     color: $white;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 32px;
     padding: 0.5rem 0;
     padding-right: 2rem;
     margin: 0;
