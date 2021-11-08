@@ -49,7 +49,7 @@ const Ul = styled.ul`
     font-weight: 500;
     color: $white;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 29px;
     padding: 0.5rem 0;
     padding-right: 2rem;
     margin: 0;
