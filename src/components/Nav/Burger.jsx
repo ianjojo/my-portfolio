@@ -73,11 +73,12 @@ const Ul = styled.ul`
     backdrop-filter: blur(8px); // This be the blur
 
     position: fixed;
+
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
-    height: 50vh;
-    width: 300px;
+    height: 30vh;
+    width: 200px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     li {

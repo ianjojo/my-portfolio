@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../client.js";
 import { Link } from "react-router-dom";
+import "./Post.scss";
 export default function Post() {
   const [postData, setPost] = useState(null);
 
@@ -26,14 +27,10 @@ export default function Post() {
   return (
     <main className="bg-gray-500 min-h-screen p-12">
       <section className="container mx-auto">
-        <h1 className="text-5xl flex justify-center cursive">blog.</h1>
-        <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          musings and ramblings
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="blogposts">
           {postData &&
             postData.map((post, index) => (
-              <article>
+              <article className="post">
                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                   <span
                     className="block h-64 relative rounded leading-snug  nm-flat-gray-500-lg"
@@ -43,11 +40,13 @@ export default function Post() {
                     className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-gray-400"
                     key={index}
                   > */}
-                    <img
-                      src={post.mainImage.asset.url}
-                      alt={post.mainImage.alt}
-                      className="w-full h-full rounded-r object-cover absolute"
-                    />
+                    <div className="fill">
+                      <img
+                        src={post.mainImage.asset.url}
+                        alt={post.mainImage.alt}
+                        className="post__img"
+                      />
+                    </div>
                     <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
                       <h3 className="text-gray-800 text-lg font-bold px-3 py-4 bg-purple-700 text-purple-100 bg-opacity-75 rounded">
                         {post.title}

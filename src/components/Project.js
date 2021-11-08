@@ -30,7 +30,7 @@ export default function Project() {
   }, []);
 
   return (
-    <main className="container">
+    <main className="container2">
       <h2 className="hello">
         Hello, ianjojo here. Web dev, earl grey tea enthusiast, musician,
         prolific tinkerer. Looking for the intersections of all things. My

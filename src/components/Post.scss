@@ -7,36 +7,98 @@
   padding: 0;
 }
 
+.blogposts {
+  display: flex;
+  flex-direction: column;
+}
 .post {
+  width: 25%;
+
   &__container {
-    padding: 2rem;
+    // margin: 0 2rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    // align-items: space-evenly;
   }
-  &__imagecontainer {
-    border-radius: 20px;
-    width: 200px;
-    height: 200px;
-    border: 2px solid white;
-    box-shadow: rgba(131, 227, 230, 0.9) 0px 0px 17px;
-  }
-
-  &__image {
-    width: 100%;
-    height: 100%;
-
-    border-radius: 20px;
-    object-fit: cover;
-  }
-
   &__title {
-    color: $lightblue;
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+    font-family: "ClashDisplay-SemiBold";
+  }
+
+  &__img {
+  }
+
+  &__desc {
+    &--container {
+      height: 100px;
+      width: 15rem;
+    }
+  }
+  &__tagbox {
+    margin-top: 8px;
+    border-bottom: 1px solid white;
+    padding-bottom: 32px;
+  }
+  &__tag {
+    color: $green;
+    border: 1px solid $white;
+    display: inline;
+    border-radius: 8px;
+
+    padding: 3px 4px;
   }
 }
 
-.blogposts {
+.fill {
   display: flex;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 15rem;
+  width: 15rem;
+}
+.fill .project__img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+@media screen and (max-width: 1140px) {
+  .project {
+    width: 35%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fill {
+    width: 100%;
+    height: 40%;
+    max-height: 500px;
+  }
+
+  .project {
+    width: 100%;
+
+    &__title {
+      width: 100%;
+    }
+    &__container {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+
+    &__desc {
+      &--container {
+        height: 100px;
+        width: 100%;
+      }
+    }
+  }
 }
