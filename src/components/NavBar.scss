@@ -9,17 +9,21 @@ html {
 .navbar__container {
   background-color: $black;
   display: flex;
-  margin: 16px 32px;
+
   padding: 4px 0;
   justify-content: space-between;
   align-items: center;
   border-top: 0.5px solid $white;
   border-bottom: 0.5px solid $white;
 }
-
+.hamburgerr {
+  display: none;
+}
 .navbar {
   display: flex;
   align-items: center;
+  // float: right;
+  flex-wrap: wrap;
   &__link {
     font-family: "ClashDisplay-Medium";
     font-weight: 500;
@@ -62,4 +66,26 @@ html {
   border-radius: 50%;
   padding: 3px;
   margin: 0 0.25rem;
+}
+
+// @media screen and (max-width: 767px) {
+//   .hamburgerr {
+//     position: fixed;
+//     top: 10px;
+//     left: 2rem;
+//     padding-top: 10px;
+//     margin-left: 10px;
+//     z-index: 20;
+//   }
+// }
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    &__container {
+      flex-direction: column;
+    }
+  }
+  .social-nav {
+    display: none;
+  }
 }

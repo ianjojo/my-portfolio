@@ -30,47 +30,53 @@ export default function Project() {
   }, []);
 
   return (
-    <main className="bg-gray-300 min-h-screen p-12">
-      <section className="">
-        <section className="project__container">
-          {projectData &&
-            projectData.map((project, index) => (
-              <article className="project">
-                <h3 className="project__title">
-                  <a
-                    href={project.link}
-                    alt={project.title}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {project.title}
-                  </a>
-                </h3>
-                <div className="project__desc--container">
-                  <p className="project__desc">{project.description}</p>
-                </div>
-
+    <main className="container">
+      <h2 className="hello">
+        Hello, ianjojo here. Web dev, earl grey tea enthusiast, musician,
+        prolific tinkerer. Looking for the intersections of all things. My
+        skills include toasting hazelnuts to perfection, front-end and buncha
+        stacks. My wife and my cat think I’m the most awesome.
+      </h2>
+      {/* <section className=""> */}
+      <section className="project__container">
+        {projectData &&
+          projectData.map((project, index) => (
+            <article className="project">
+              <h3 className="project__title">
                 <a
                   href={project.link}
-                  rel="noopener noreferrer"
+                  alt={project.title}
                   target="_blank"
-                  className="text-red-500 font-bold hover:underline hover:text-red-400"
+                  rel="noopener noreferrer"
                 >
-                  <div className="fill">
-                    <img
-                      className="project__img"
-                      src={project.projectImage.asset.url}
-                      alt=""
-                    />
-                  </div>
+                  {project.title}
                 </a>
-                <div className="project__tagbox">
-                  <h5 className="project__tag">{project.tags}</h5>
+              </h3>
+              <div className="project__desc--container">
+                <p className="project__desc">{project.description}</p>
+              </div>
+
+              <a
+                href={project.link}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-red-500 font-bold hover:underline hover:text-red-400"
+              >
+                <div className="fill">
+                  <img
+                    className="project__img"
+                    src={project.projectImage.asset.url}
+                    alt=""
+                  />
                 </div>
-              </article>
-            ))}
-        </section>
+              </a>
+              <div className="project__tagbox">
+                <h5 className="project__tag">{project.tags}</h5>
+              </div>
+            </article>
+          ))}
       </section>
+      {/* </section> */}
     </main>
   );
 }

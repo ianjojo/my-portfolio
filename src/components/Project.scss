@@ -6,12 +6,19 @@ a {
   text-decoration: none;
 }
 
+.hello {
+  font-family: "ClashDisplay-SemiBold";
+  font-size: 30px;
+}
+.container {
+  margin: 0 2rem;
+}
 .project {
   width: 25%;
   &__container {
-    margin: 0 2rem;
+    // margin: 0 2rem;
     display: flex;
-    align-items: space-evenly;
+    // align-items: space-evenly;
   }
   &__title {
     color: whitesmoke;
@@ -55,4 +62,34 @@ a {
   object-fit: cover;
   min-width: 100%;
   min-height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .fill {
+    width: 100%;
+    height: 40%;
+    max-height: 500px;
+  }
+
+  .project {
+    width: 90%;
+
+    &__title {
+      width: 100%;
+    }
+    &__container {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+
+    &__desc {
+      &--container {
+        height: 100px;
+        width: 100%;
+      }
+    }
+  }
 }

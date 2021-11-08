@@ -21,12 +21,6 @@ export default function Home() {
             voluptatum maxime architecto beatae ex explicabo.
           </p>
         </div>
-
-        <img
-          className="welcome__img"
-          src="https://media.giphy.com/media/3o85xyj0M45c9MkXhS/giphy.gif"
-          alt=""
-        />
       </section>
     </main>
   );
