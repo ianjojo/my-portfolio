@@ -121,7 +121,7 @@ export default function NavBar() {
 
             flex-direction: column;
             // background-color: blue;
-            // height: 30vh;
+            height: 100vh;
             margin-top: 0;
             width: 100%;
             align-items: flex-start;
@@ -140,6 +140,10 @@ export default function NavBar() {
             align-items: flex-start;
             padding-bottom: 0;
             margin-bottom: 0;
+          }
+
+          .navbar__active {
+            text-underline-offset: 1px;
           }
         }
       `}</style>
