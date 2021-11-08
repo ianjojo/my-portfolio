@@ -4,7 +4,7 @@ import About from "./components/About";
 import SinglePost from "./components/SinglePost";
 import Post from "./components/Post";
 import Project from "./components/Project";
-import NavBar from "./components/NavBar";
+// import NavBar from "./components/NavBar";
 import NavBar2 from "./components/Nav/Navbar";
 import "./typography.scss";
 import "./App.scss";
