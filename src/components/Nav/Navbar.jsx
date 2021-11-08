@@ -3,8 +3,9 @@ import styled from "styled-components";
 import Burger from "./Burger";
 
 const Nav = styled.nav`
-  //   margin: 0 2rem;
   height: 55px;
+  margin: 0;
+  padding: 0;
   border-top: 0.5px solid white;
   border-bottom: 0.5px solid white;
   //   padding: 0 20px;
@@ -27,7 +28,7 @@ const Nav = styled.nav`
 `;
 
 const Container = styled.div`
-  margin: 0 2rem;
+  //   margin: 0 2rem;
 
   //   align-items: center;
   //   width: 100%;
