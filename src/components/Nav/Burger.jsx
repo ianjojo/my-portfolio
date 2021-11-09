@@ -56,6 +56,10 @@ const Ul = styled.ul`
     display: inline-flex;
     text-align: left;
   }
+  .navbar__link:hover {
+    color: transparent;
+    text-shadow: 0 0 4px rgba(42, 241, 233, 0.7);
+  }
   .navbar__active {
     text-decoration: underline;
     text-underline-offset: 10px;

@@ -24,6 +24,11 @@ const Nav = styled.nav`
     display: inline-flex;
     text-align: left;
   }
+
+  .navbar__home:hover {
+    color: transparent;
+    text-shadow: 0 0 4px rgba(42, 241, 233, 0.7);
+  }
 `;
 
 const Container = styled.div`

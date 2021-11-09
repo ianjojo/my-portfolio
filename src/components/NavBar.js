@@ -7,6 +7,7 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import SocialIcon from 
 import Hamburger from "./Hamburger";
 
 export default function NavBar() {
@@ -58,7 +59,7 @@ export default function NavBar() {
         <FontAwesomeIcon className="icon" icon={faTwitter} />
         <FontAwesomeIcon className="icon" icon={faGithub} />
         <FontAwesomeIcon className="icon" icon={faLinkedin} />
-        {/* <SocialIcon
+        <SocialIcon
             url="https://twitter.com/shakysnakes"
             className="mr-4"
             target="_blank"
@@ -78,7 +79,7 @@ export default function NavBar() {
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
-          /> */}
+          />
       </div>
 
       <style jsx>{`
