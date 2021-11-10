@@ -11,6 +11,7 @@ export default function Post() {
         `*[_type == "post"]{
         title,
         slug,
+        publishedAt,
         mainImage{
           asset->{
             _id,
@@ -26,7 +27,8 @@ export default function Post() {
 
   return (
     <main className="bg-gray-500 min-h-screen p-12">
-      <section className="container mx-auto">
+      <section className=" mx-auto">
+        <h2 className="blog__title">Blog</h2>
         <div className="blogposts">
           {postData &&
             postData.map((post, index) => (
@@ -40,11 +42,11 @@ export default function Post() {
                     className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-gray-400"
                     key={index}
                   > */}
-                    <div className="fill">
+                    <div className="blogfill">
                       <img
                         src={post.mainImage.asset.url}
                         alt={post.mainImage.alt}
-                        className="post__img"
+                        className="blogthumbimg"
                       />
                     </div>
                     <span className="block relative h-full flex justify-end items-end pr-4 pb-4">
@@ -53,6 +55,7 @@ export default function Post() {
                       </h3>
                     </span>
                   </span>
+                  <h3 className="post__date">{post.publishedAt}</h3>
                 </Link>
               </article>
             ))}

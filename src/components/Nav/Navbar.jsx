@@ -11,6 +11,11 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   //   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
+
   .navbar__home {
     padding: 15px 0;
     font-family: "ClashDisplay-SemiBold";

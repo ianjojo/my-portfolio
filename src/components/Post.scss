@@ -10,6 +10,7 @@
 .blogposts {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
 }
 .post {
   width: 25%;
@@ -51,7 +52,7 @@
   }
 }
 
-.fill {
+.blogfill {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +60,7 @@
   height: 15rem;
   width: 15rem;
 }
-.fill .project__img {
+.blog__thumbimg {
   object-fit: cover;
   width: 100%;
   min-height: 100%;
@@ -74,10 +75,14 @@
 }
 
 @media screen and (max-width: 767px) {
-  .fill {
-    width: 100%;
-    height: 40%;
+  .blogfill {
+    width: 100px;
+    height: 100px;
     max-height: 500px;
+  }
+  .blog__thumbimg {
+    object-fit: contain;
+    width: 100%;
   }
 
   .project {

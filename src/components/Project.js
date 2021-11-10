@@ -62,9 +62,9 @@ export default function Project() {
                 target="_blank"
                 className="text-red-500 font-bold hover:underline hover:text-red-400"
               >
-                <div className="fill">
+                <div className="pfill">
                   <img
-                    className="project__img"
+                    className="pproject__img"
                     src={project.projectImage.asset.url}
                     alt=""
                   />
