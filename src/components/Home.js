@@ -10,6 +10,10 @@ export default function Home() {
     align-items: center;
     justify-content: flex-start;
     text-align: left;
+
+    @media screen and (max-width: 600px) {
+      justify-content: space-around;
+    }
   `;
   return (
     <main className="bg-gray-500">
@@ -32,9 +36,6 @@ export default function Home() {
         </div>
       </section>
       <SocialNav>
-        {/* <FontAwesomeIcon className="icon" icon={faTwitter} />
-          <FontAwesomeIcon className="icon" icon={faGithub} />
-          <FontAwesomeIcon className="icon" icon={faLinkedin} /> */}
         <SocialIcon
           url="https://twitter.com/shakysnakes"
           className="mr-4"

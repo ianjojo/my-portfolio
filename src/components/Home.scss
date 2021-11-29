@@ -1,51 +1,67 @@
 @import "../variables.scss";
 @import "../typography.scss";
+.socialbox {
+    display: flex;
+    align-items: center;
+}
 
 body {
-  font-family: "ClashDisplay-Bold";
-  background-color: $black;
-  color: whitesmoke;
-  font-family: "ClashDisplay-Regular";
+    font-family: "ClashDisplay-Bold";
+    background-color: $black;
+    color: whitesmoke;
+    font-family: "ClashDisplay-Regular";
 }
 
 h1 {
-  //   font-family: "Arial";
-  font-family: "ClashDisplay-Regular";
-  font-size: 50px;
+    //   font-family: "Arial";
+    font-family: "ClashDisplay-Regular";
+    font-size: 50px;
 }
 
 .mr-4:hover {
-  color: rgba(42, 241, 233, 0.7);
-  box-shadow: 0 0 4px rgba(42, 241, 233, 0.7);
+    color: rgba(42, 241, 233, 0.7);
+    box-shadow: 0 0 4px rgba(42, 241, 233, 0.7);
 }
+
 .welcome {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &__text {
-    color: whitesmoke;
-  }
-
-  &__img {
-    height: 300px;
-    width: 300px;
-  }
-
-  &__left {
-    width: 90%;
-  }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__text {
+        color: whitesmoke;
+    }
+    &__img {
+        height: 300px;
+        width: 300px;
+    }
+    &__left {
+        width: 90%;
+    }
 }
 
 .sig {
-  height: 200px;
-  width: auto;
-  text-align: right;
+    height: 200px;
+    width: auto;
+    text-align: right;
 }
 
 .sigbox {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 64px;
-  align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 64px;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .sig {
+        width: 100%;
+        height: auto;
+    }
+    .sigbox {
+        width: auto;
+        padding: 0;
+    }
+    .welcome__left {
+        width: 100%;
+    }
 }

@@ -1,91 +1,85 @@
 @import "../variables.scss";
 @import "../typography.scss";
-
 html {
-  font-family: "ClashDisplay-Regular";
-  font-weight: 200;
+    font-family: "ClashDisplay-Regular";
+    font-weight: 200;
 }
 
 .navbar__container {
-  background-color: $black;
-  display: flex;
-
-  padding: 4px 0;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 0.5px solid $white;
-  border-bottom: 0.5px solid $white;
+    background-color: $black;
+    display: flex;
+    padding: 4px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.5px solid $white;
+    border-bottom: 0.5px solid $white;
 }
+
 .hamburgerr {
-  display: none;
+    display: none;
 }
+
 .navbar {
-  display: flex;
-  align-items: center;
-  // float: right;
-  flex-wrap: wrap;
-  &__link {
-    font-family: "ClashDisplay-Medium";
-    font-weight: 500;
-    color: $white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: 0.5rem 0;
-    padding-right: 2rem;
-    margin: 0;
-    display: inline-flex;
-    text-align: left;
-  }
-
-  &__home {
-    font-family: "ClashDisplay-Semibold";
-    font-weight: 500;
-    color: $white;
-    text-decoration: none;
-    font-size: 2rem;
-    padding: 0.5rem 0;
-    padding-right: 2rem;
-    margin: 0;
-    display: inline-flex;
-    text-align: left;
-  }
-
-  &__active {
-    text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 1px;
-    color: $green;
-    // filter: brightness(110);
-    // text-shadow: rgba(131, 227, 230, 0.9) 0px 0px 17px;
-  }
+    display: flex;
+    align-items: center;
+    // float: right;
+    flex-wrap: wrap;
+    &__link {
+        font-family: "ClashDisplay-Medium";
+        font-weight: 500;
+        color: $white;
+        text-decoration: none;
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+        padding-right: 2rem;
+        margin: 0;
+        display: inline-flex;
+        text-align: left;
+    }
+    &__home {
+        font-family: "ClashDisplay-Semibold";
+        font-weight: 500;
+        color: $white;
+        text-decoration: none;
+        font-size: 1.75rem;
+        padding: 0.5rem 0;
+        padding-right: 2rem;
+        margin: 0;
+        display: inline-flex;
+        text-align: left;
+    }
+    &__active {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 1px;
+        color: $green;
+        // filter: brightness(110);
+        // text-shadow: rgba(131, 227, 230, 0.9) 0px 0px 17px;
+    }
 }
 
 .icon {
-  background-color: $white;
-  color: $black;
-  border-radius: 50%;
-  padding: 3px;
-  margin: 0 0.25rem;
+    background-color: $white;
+    color: $black;
+    border-radius: 50%;
+    padding: 3px;
+    margin: 0 0.25rem;
 }
 
-// @media screen and (max-width: 767px) {
-//   .hamburgerr {
-//     position: fixed;
-//     top: 10px;
-//     left: 2rem;
-//     padding-top: 10px;
-//     margin-left: 10px;
-//     z-index: 20;
-//   }
-// }
+@media screen and (max-width: 806px) {
+    .navbar__home {
+        font-size: 20px;
+        color: red;
+    }
+}
 
 @media screen and (max-width: 767px) {
-  .navbar {
-    &__container {
-      flex-direction: column;
+    .navbar {
+        &__container {
+            flex-direction: column;
+        }
     }
-  }
-  .social-nav {
-    display: none;
-  }
+    .social-nav {
+        display: none;
+    }
 }

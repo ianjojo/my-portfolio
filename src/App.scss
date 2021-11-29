@@ -1,11 +1,10 @@
 @import "./typography.scss";
-
 .container {
-  margin: 56px 63px;
+    margin: 56px 63px;
 }
 
-@media screen and (max-width: 600px) {
-  .container {
-    margin: 0 1rem;
-  }
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 1rem;
+    }
 }
