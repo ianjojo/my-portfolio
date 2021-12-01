@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Burger from "./Burger";
-import { SocialIcon } from "react-social-icons";
+// import Burger from "./Burger";
+// import { SocialIcon } from "react-social-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -120,16 +120,28 @@ const Navbar = () => {
             target="_blank"
             style={{ height: 35, width: 35 }}
           /> */}
-          <a href="https://github.com/ianjojo" target="_blank">
+          <a href="https://github.com/ianjojo" target="_blank" rel="noreferrer">
             <FontAwesomeIcon className="circle-icon" icon={faGithub} />
           </a>
-          <a href="https://linkedin.com/in/ianjojo" target="_blank">
+          <a
+            href="https://linkedin.com/in/ianjojo"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon className="circle-icon" icon={faLinkedinIn} />
           </a>
-          <a href="https://soundcloud.com/shakysnakes" target="_blank">
+          <a
+            href="https://soundcloud.com/shakysnakes"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon className="circle-icon" icon={faSoundcloud} />
           </a>
-          <a href="mailto:ianallanjohnston@gmail.com" target="_blank">
+          <a
+            href="mailto:ianallanjohnston@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon className="circle-icon" icon={faEnvelope} />
           </a>
         </SocialNav>

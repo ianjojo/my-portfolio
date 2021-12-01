@@ -1,20 +1,20 @@
 import React from "react";
 import "./Home.scss";
-import { SocialIcon } from "react-social-icons";
-import styled from "styled-components";
-import sig from "./sig.png";
+// import { SocialIcon } from "react-social-icons";
+// import styled from "styled-components";
+// import sig from "./sig.png";
 export default function Home() {
-  const SocialNav = styled.div`
-    display: flex;
-    //   height: 32px;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: left;
+  // const SocialNav = styled.div`
+  //   display: flex;
+  //   //   height: 32px;
+  //   align-items: center;
+  //   justify-content: flex-start;
+  //   text-align: left;
 
-    @media screen and (max-width: 600px) {
-      justify-content: space-around;
-    }
-  `;
+  //   @media screen and (max-width: 600px) {
+  //     justify-content: space-around;
+  //   }
+  // `;
   return (
     <main className="mainpage">
       {/* <img
