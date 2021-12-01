@@ -16,7 +16,7 @@ export default function Home() {
     }
   `;
   return (
-    <main className="bg-gray-500">
+    <main className="mainpage">
       {/* <img
         src={image}
         alt="astronaut floating in space"
@@ -24,18 +24,19 @@ export default function Home() {
       /> */}
       <section className="welcome">
         <div className="welcome__left">
-          <h1 className="welcome__text">Sveiki, Ianjojo is here.</h1>
+          {/* <h1 className="welcome__text">Sveiki, Ianjojo is here.</h1> */}
           <p className="hello">
-            Web dev, earl grey tea enthusiast, musician, prolific tinkerer.
-            Looking for the intersection of all things. My skills include
-            toasting hazelnuts to perfection, front-end development and buncha
-            stacks. My wife and my cat think I’m the most awesome and that's
-            pretty much all I need. This portfolio was created from scratch with
-            React and SASS and I'm using sanity.io to manage content.
+            Hello, I'm Ian! Web dev, earl grey tea enthusiast, musician,
+            prolific tinkerer. Looking for the intersection of all things. My
+            skills include toasting hazelnuts to perfection, front-end
+            development as well as some back-end knowledge with ExpressJS. My
+            wife and my cat think I’m the most awesome and that's pretty much
+            all I need. This portfolio was created from scratch with React and
+            SASS and I'm using sanity.io to manage the content.
           </p>
         </div>
       </section>
-      <SocialNav>
+      {/* <SocialNav>
         <SocialIcon
           url="https://twitter.com/shakysnakes"
           className="mr-4"
@@ -79,7 +80,7 @@ export default function Home() {
       </SocialNav>
       <div className="sigbox">
         <img src={sig} alt="my signature" className="sig" />
-      </div>
+      </div> */}
     </main>
   );
 }

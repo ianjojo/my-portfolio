@@ -5,6 +5,8 @@
     align-items: center;
 }
 
+.mainpage {}
+
 body {
     font-family: "ClashDisplay-Bold";
     background-color: $black;
@@ -19,7 +21,7 @@ h1 {
 }
 
 .mr-4:hover {
-    color: rgba(42, 241, 233, 0.7);
+    fill: rgba(42, 241, 233, 0.7);
     box-shadow: 0 0 4px rgba(42, 241, 233, 0.7);
 }
 
@@ -52,6 +54,10 @@ h1 {
     align-items: center;
 }
 
+.hello {
+    margin-top: 1rem;
+}
+
 @media screen and (max-width: 600px) {
     .sig {
         width: 100%;
@@ -63,5 +69,8 @@ h1 {
     }
     .welcome__left {
         width: 100%;
+    }
+    .hello {
+        margin-top: 0.5rem;
     }
 }

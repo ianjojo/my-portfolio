@@ -1,0 +1,44 @@
+.stickyheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: lightblue;
+}
+
+social-svg-mask:hover {
+    fill: rgba(42, 241, 233, 1);
+    color: rgba(42, 241, 233, 0.7);
+}
+
+social-svg-mask {
+    fill: blue !important;
+}
+
+.fa-linkedinIn {
+    padding: 0.5rem;
+}
+
+.fa-github {
+    padding: 0.5rem;
+}
+
+.fa-soundcloud {
+    padding: 0.5rem;
+}
+
+.fa-envelope {
+    padding: 0.5rem;
+}
+
+.circle-icon {
+    color: black;
+    background: whitesmoke;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.circle-icon:hover {
+    background: rgba(42, 241, 233, 1);
+    box-shadow: rgba(42, 241, 233, 0.7);
+}

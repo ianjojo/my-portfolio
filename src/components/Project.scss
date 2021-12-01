@@ -12,6 +12,7 @@ a {
 
 .project {
     width: 22%;
+    margin-bottom: 1.5rem;
     &__container {
         display: flex;
         flex-wrap: wrap;
@@ -35,7 +36,7 @@ a {
     &__tagbox {
         margin-top: 8px;
         border-bottom: 1px solid white;
-        padding-bottom: 32px;
+        padding-bottom: 12px;
         width: 100%;
     }
     &__tag {

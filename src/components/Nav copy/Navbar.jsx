@@ -1,18 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Burger from "./Burger";
-import "./Navbar.scss";
-
 const Nav = styled.nav`
   height: 55px;
   margin: 0;
-  // padding: 0.5rem 2.5rem;
+  padding: 0;
 
-  // position: fixed;
-  // width: 100%;
-  // top: 0;
-  // left: 0;
-  // background-color: black;
   border-top: 0.5px solid white;
   border-bottom: 0.5px solid white;
   //   padding: 0 20px;
