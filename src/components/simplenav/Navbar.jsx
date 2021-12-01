@@ -120,10 +120,18 @@ const Navbar = () => {
             target="_blank"
             style={{ height: 35, width: 35 }}
           /> */}
-          <FontAwesomeIcon className="circle-icon" icon={faLinkedinIn} />
-          <FontAwesomeIcon className="circle-icon" icon={faGithub} />
-          <FontAwesomeIcon className="circle-icon" icon={faSoundcloud} />
-          <FontAwesomeIcon className="circle-icon" icon={faEnvelope} />
+          <a href="https://github.com/ianjojo" target="_blank">
+            <FontAwesomeIcon className="circle-icon" icon={faGithub} />
+          </a>
+          <a href="https://linkedin.com/in/ianjojo" target="_blank">
+            <FontAwesomeIcon className="circle-icon" icon={faLinkedinIn} />
+          </a>
+          <a href="https://soundcloud.com/shakysnakes" target="_blank">
+            <FontAwesomeIcon className="circle-icon" icon={faSoundcloud} />
+          </a>
+          <a href="mailto:ianallanjohnston@gmail.com" target="_blank">
+            <FontAwesomeIcon className="circle-icon" icon={faEnvelope} />
+          </a>
         </SocialNav>
         {/* <Burger /> */}
       </Nav>

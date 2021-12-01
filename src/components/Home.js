@@ -27,12 +27,13 @@ export default function Home() {
           {/* <h1 className="welcome__text">Sveiki, Ianjojo is here.</h1> */}
           <p className="hello">
             Hello, I'm Ian! Web dev, earl grey tea enthusiast, musician,
-            prolific tinkerer. Looking for the intersection of all things. My
-            skills include toasting hazelnuts to perfection, front-end
-            development as well as some back-end knowledge with ExpressJS. My
-            wife and my cat think I’m the most awesome and that's pretty much
-            all I need. This portfolio was created from scratch with React and
-            SASS and I'm using sanity.io to manage the content.
+            prolific tinkerer - looking for the intersection of all things. My
+            skills include toasting hazelnuts to perfection and front-end
+            development with HTML5, SASS and ReactJS. I also have some back-end
+            knowledge with Node, ExpressJS and MongoDB. My wife and my cat think
+            I’m the most awesome and that's pretty much all I need. This
+            portfolio was created from scratch with React and SASS and I'm using
+            sanity.io to manage the content.
           </p>
         </div>
       </section>
